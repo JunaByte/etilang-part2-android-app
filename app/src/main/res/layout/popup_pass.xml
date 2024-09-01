@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dialog_judul"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Ganti Password"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password Lama"
+                        app:endIconMode="password_toggle"
+                        app:endIconTint="@color/primary"
+                        app:shapeAppearance="@style/Cut"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/p_lama"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:ems="10"
+                            android:inputType="textPassword"
+                            android:paddingStart="16dp"
+                            android:textColor="#3678FB"
+                            android:textColorHint="#3678FB"
+                            android:textSize="14dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password Baru"
+                        app:endIconMode="password_toggle"
+                        app:endIconTint="@color/primary"
+                        app:shapeAppearance="@style/Cut"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/p_baru"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:ems="10"
+                            android:inputType="textPassword"
+                            android:paddingStart="16dp"
+                            android:textColor="#3678FB"
+                            android:textColorHint="#3678FB"
+                            android:textSize="14dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Konfirmasi Password"
+                        app:endIconMode="password_toggle"
+                        app:endIconTint="@color/primary"
+                        app:shapeAppearance="@style/Cut"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/p_konf"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:ems="10"
+                            android:inputType="textPassword"
+                            android:paddingStart="16dp"
+                            android:textColor="#3678FB"
+                            android:textColorHint="#3678FB"
+                            android:textSize="14dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/pop_simpan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/button_shape"
+                        android:backgroundTint="@color/primary"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:text="Simpan"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

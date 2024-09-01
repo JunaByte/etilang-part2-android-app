@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+		tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/dialog1"/>
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-75dp"
+                android:background="@drawable/round"
+                android:padding="20dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round2"/>
+
+				<ImageView
+					android:id="@+id/imgrating"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_centerInParent="true"
+					android:adjustViewBounds="true"
+					android:padding="20dp"
+					android:src="@drawable/blue" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beri Penilaian"
+                android:textColor="#CC000000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:text="Penilaian anda sangat bermanfaat untuk perbaikan layanan kami dimasa mendatang."
+                />
+            <TextView
+                android:id="@+id/txtrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#00FFFFFF"
+                />
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:theme="@style/myrate"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconTint="@color/primary"
+                android:hint="Keterangan"
+                app:shapeAppearance="@style/Cut"
+                android:layout_margin="10dp">
+
+                <EditText
+                    android:id="@+id/rateket"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:ems="10"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:gravity="start|top"
+                    android:imeOptions="actionDone"
+                    android:paddingStart="16dp"
+                    android:textColor="@color/primary"
+                    android:textColorHint="#3678FB"
+                    android:textSize="12dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/rate_nanti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/roundbuttom"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Nilai Nanti"
+                    android:textAllCaps="false"
+                    android:textColor="#cc000000"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/roundbt"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Rate Sekarang"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

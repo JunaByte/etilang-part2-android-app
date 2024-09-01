@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/swipe"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<RelativeLayout
+		android:id="@+id/idr"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp">
+		<androidx.cardview.widget.CardView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_marginStart="5dp"
+			android:layout_marginEnd="5dp"
+			app:cardCornerRadius="5dp">
+			<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:fontFamily="@font/robotomedium"
+				android:text="@string/app_name"
+				android:textAppearance="?android:textAppearanceSmall"
+				android:layout_height="wrap_content"
+				android:id="@+id/checkBox">
+
+			</CheckBox>
+		</androidx.cardview.widget.CardView>
+	</RelativeLayout>
+
+</RelativeLayout>

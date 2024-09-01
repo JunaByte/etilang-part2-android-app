@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "804922423936",
+    "project_id": "aduan-b4cf2",
+    "storage_bucket": "aduan-b4cf2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804922423936:android:ef81c175b71a2445a8c465",
+        "android_client_info": {
+          "package_name": "com.example.reskrim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804922423936-o36bnfaq94gh4dh44fjoni4sochffpep.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBueN4_pdML2YTap-k2aiS1OZW6kPTq8FI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "804922423936-o36bnfaq94gh4dh44fjoni4sochffpep.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
